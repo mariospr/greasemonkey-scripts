@@ -8,7 +8,7 @@
 // ==/UserScript==
 
 function findShowOlderCommentsBlock(container) {
-  let timeLineViewDiv = container.getElementById("UQ0_3");
+  let timeLineViewDiv = container.getElementsByClassName("phui-timeline-view")[0]
   let timeLineNodes = timeLineViewDiv.childNodes;
   for (let i = 0; i < timeLineNodes.length; ++i) {
     let childNode = timeLineNodes[i];
